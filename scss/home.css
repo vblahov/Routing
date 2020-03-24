@@ -1,0 +1,12 @@
+.home-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20;
+    max-width: 100%;
+    justify-content: space-between;  
+    padding: 10px;
+}
+
+.home{
+    background-image: url(https://cdn1.vectorstock.com/i/1000x1000/39/20/simple-background-of-old-brickwork-design-vector-2653920.jpg);
+}

@@ -1,0 +1,27 @@
+.recipeImg {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    background-color: #F4A460;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(173, 198, 230);
+  border-radius: 15px;
+  width: 300px;
+  margin: 0px 10px 30px 10px;
+}
+
+.recipe-name {
+    margin-top: 0;
+    font-size: 250%;
+}
+
+.recipe-category {
+    margin-top: 0;
+}
