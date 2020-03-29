@@ -9,6 +9,7 @@
 .recipe {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
   background-color: rgb(173, 198, 230);
