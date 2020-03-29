@@ -14,40 +14,41 @@ export default class Home extends React.Component{
   }
 
   handleChange(e) {
+    let searchText = "";
+    let categories = this.state.filteredCategories;
     try {
       let value = JSON.parse(e.target.value);
-      let categories = this.state.filteredCategories;
-      if(categories.some(x => x == value.category)){
-        const index = categories.indexOf(value.category  );
+      let lc = value.category.toLowerCase();
+      if(categories.some(x => x == lc)){
+        const index = categories.indexOf(lc);
         categories.splice(index, 1);
       } else{
-        categories.push(value.category);
+        categories.push(lc);
       }
+      searchText = document.getElementById("search").value;
     }
     catch{
+      console.log("bly")
+      searchText = e.target.value;
     }
-    console.log(this.state.filteredCategories);
-    let currentCategories = this.state.categories.map((item) => {
-      if(item.props.checked == true){
-        return item.category;
-      }
-    });
-    //let filteredByCategories = this.state.recipes.filter(x => currentCategories.some(y => y.category == x.category));
     let currentList = [];
     let newList = [];
-
-    if (e.target.value !== "") {
+    if (searchText !== "" || categories.length > 0) {
       currentList = this.state.recipes;
 
       newList = currentList.filter(recipe => {
       const lc = recipe.name.toLowerCase();
-      const filter = e.target.value.toLowerCase();
+      const filter = searchText.toLowerCase();
+      if(categories.length > 0) {
+        const category = recipe.category.toLowerCase();
+        return lc.includes(filter) && categories.some(x => x == category)
+      }
       return lc.includes(filter);
       });
     } else {
       newList = this.state.recipes;
     }  
-    let filtered = newList.map((recipe, index) => {
+    let filtered = newList.map((recipe) => {
       return <Recipe recipe = {recipe}/>
     })
     this.setState({
@@ -82,7 +83,7 @@ export default class Home extends React.Component{
   render(){
     return (<div className="home">
               <div className="tool-bar">
-              <input
+              <input id="search"
                 type="text"
                 placeholder="Search recipe..."
                 onChange={this.handleChange}

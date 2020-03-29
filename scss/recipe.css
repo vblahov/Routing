@@ -14,7 +14,15 @@
   background-color: rgb(173, 198, 230);
   border-radius: 15px;
   width: 300px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;  
+  border: 2px solid #000000;
   margin: 0px 10px 30px 10px;
+}
+
+.recipe:hover {
+    border-color: red;
+    transition: 0.5s;
 }
 
 .recipe-name {
