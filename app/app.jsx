@@ -9,7 +9,6 @@ import NotFound from './components/notfound.jsx';
 ReactDOM.render(
     <Router>
         <div>
-           <Nav />
             <Switch>
                 <Route exact path="/recipes" component={Home} />
                 <Route path="/products" component={Products} />

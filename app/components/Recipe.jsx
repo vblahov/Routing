@@ -7,6 +7,6 @@ export default function Recipe (props) {
           <img src={props.recipe.picture} className="recipeImg"></img>
           <p>{props.recipe.shortDesc}</p>
           <p>{props.recipe.longDesc}</p>
-          <h1>{props.recipe.createDate}</h1>
+          <h5>Date of creating: {props.recipe.createDate}</h5>
          </div>;
 }
