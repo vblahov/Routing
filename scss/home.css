@@ -9,9 +9,12 @@
     flex-wrap: wrap;
     margin: 20;
     max-width: 100%;
-    justify-content: space-between;  
     padding: 10px;
-    background-image: url(https://cdn1.vectorstock.com/i/1000x1000/39/20/simple-background-of-old-brickwork-design-vector-2653920.jpg);
+    background-image: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701575077.jpg);
+    background-size: cover;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .search {
@@ -31,10 +34,21 @@
     background-color: rgb(0, 102, 153);
 }
 
+.home-add-button {
+    background-image: url(https://i.ya-webdesign.com/images/add-button-png-1.png);
+    background-size: cover;
+    width: 42px;
+    height: 42px;
+    margin-top: 1px;
+    border-radius: 15px;
+    position: absolute;
+    left: 95%;
+}
+
 .categories {
     display: flex;
     flex-direction: column;
-    background-color: rgb(173, 198, 230);
+    background-image: url(https://besthqwallpapers.com/Uploads/25-4-2019/88511/thumb2-light-wooden-texture-wood-with-scratches-brown-wooden-background-wooden-texture.jpg);
 }
 
 .home-inner-content {

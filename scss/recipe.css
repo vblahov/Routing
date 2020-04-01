@@ -12,13 +12,18 @@
   cursor: pointer;
   justify-content: center;
   align-items: center;
-  background-color: rgb(173, 198, 230);
+  background-color: rgb(173, 198, 230, .7);
   border-radius: 15px;
-  width: 300px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;  
   border: 2px solid #000000;
   margin: 0px 10px 30px 10px;
+}
+
+.recipe-link {
+    width: 300px;
+    height: 400px;
+    text-decoration: none;
 }
 
 .recipe:hover {

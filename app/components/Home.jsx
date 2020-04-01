@@ -1,6 +1,7 @@
 import React from 'react';
 import Recipe from '../components/Recipe.jsx';
 import Category from './Category.jsx';
+import { Link } from 'react-router-dom';
  
 export default class Home extends React.Component{
   constructor(props){
@@ -89,6 +90,9 @@ export default class Home extends React.Component{
                 onChange={this.handleChange}
                 className="search"
               />
+              <Link to={`/add`}>
+                <button className="home-add-button"></button>
+              </Link>
               </div>
               <div className="home-inner-content">
                 <div className="categories">{this.state.categories}</div>

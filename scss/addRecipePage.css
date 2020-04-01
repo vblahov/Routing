@@ -1,0 +1,94 @@
+.add-recipe-page-content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-image: url(https://i0.wp.com/www.evelynsmark.com/wp-content/uploads/2017/03/Evelyns-Mark-Raw-Vegan-Recipes-Background.jpg);
+}
+
+.add-recipe-page-container {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: rgb(5, 243, 60, .3);
+}
+
+.cancel-button {
+    background-color: #fc1403d2;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.add-button {
+    background-color: rgb(66, 175, 23);
+    width: 30%;
+    height: 40%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cancel-button:hover {
+    background-color: #6b2d25;
+    transition: 1s;
+}
+
+.add-button:hover {
+    background-color: #16301c;
+    transition: 1s;
+}
+
+.short-input {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 10px 8px 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+.middle-input {
+  width: 90%;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  margin-bottom: 8px;
+}
+
+.long-input {
+    width: 90%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    margin-bottom: 8px;
+}
+
+.add-recipe-page-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 20%;
+    margin-bottom: 5px;
+}
+
+.cancel-link {
+    width: 30%;
+    height: 40%;
+}
