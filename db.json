@@ -2,56 +2,56 @@
     "recipes": [
       {
         "id": "0",
-        "name": "borsch",
+        "name": "Borsch",
         "category": "Soup",
         "shortDesc": "Mums best eat",
-        "longDesc": "I love this f*cking borsch",
-        "createDate": "01.02.1237",
+        "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        "createDate": "1995-9-17",
         "picture": "https://2recepta.com/recept/borshh/borshh.jpg"
       },
       {
         "id": "1",
-        "name": "olivie",
-        "category": "salat",
+        "name": "Olivie",
+        "category": "Salat",
         "shortDesc": "New Year!",
-        "longDesc": "Eat this 2 long weeks!",
-        "createDate": "31.12.2019",
+        "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        "createDate": "1995-11-17",
         "picture": "https://img.povar.ru/main/71/a7/1b/ab/salat_quotolivequot_klassicheskii_s_kolbasoi-286788.JPG"
       },
       {
         "id": "2",
-        "name": "tvorog",
-        "category": "sweat",
+        "name": "Tvorog",
+        "category": "Sweat",
         "shortDesc": "This makes cow!",
-        "longDesc": "I hate all what cow makes!",
-        "createDate": "21.06.1999",
+        "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        "createDate": "1995-9-17",
         "picture": "https://static.1000.menu/img/content/25722/tvorog-iz-moloka-v-multivarke_1520004060_8_max.jpg"
       },
       {
         "id": "3",
-        "name": "tvorog",
-        "category": "sweat",
+        "name": "Tvorog",
+        "category": "Sweat",
         "shortDesc": "This makes cow!",
-        "longDesc": "I hate all what cow makes!",
-        "createDate": "21.06.1999",
+        "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        "createDate": "1995-9-17",
         "picture": "https://static.1000.menu/img/content/25722/tvorog-iz-moloka-v-multivarke_1520004060_8_max.jpg"
       },
       {
         "id": "4",
-        "name": "tvorog",
-        "category": "sweat",
+        "name": "Tvorog",
+        "category": "Sweat",
         "shortDesc": "This makes cow!",
-        "longDesc": "I hate all what cow makes!",
-        "createDate": "21.06.1999",
+        "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        "createDate": "1995-9-17",
         "picture": "https://static.1000.menu/img/content/25722/tvorog-iz-moloka-v-multivarke_1520004060_8_max.jpg"
       },
       {
         "id": "5",
-        "name": "tvorog",
-        "category": "sweat",
+        "name": "Tvorog",
+        "category": "Sweat",
         "shortDesc": "This makes cow!",
-        "longDesc": "I hate all what cow makes!",
-        "createDate": "21.06.1999",
+        "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        "createDate": "1995-12-17",
         "picture": "https://static.1000.menu/img/content/25722/tvorog-iz-moloka-v-multivarke_1520004060_8_max.jpg"
       }
     ]

@@ -1,6 +1,7 @@
 import React from 'react';
 import Recipe from '../components/Recipe.jsx';
 import Category from './Category.jsx';
+import DateSort from './DateSort.jsx';
 import { Link } from 'react-router-dom';
  
 export default class Home extends React.Component{
@@ -9,7 +10,8 @@ export default class Home extends React.Component{
     this.state = {
       recipes: [],
       filtered: [],
-      filteredCategories: []
+      filteredCategories: [],
+      isSortedByDate: false
     }
     this.handleChange = this.handleChange.bind(this);
   }
@@ -29,13 +31,19 @@ export default class Home extends React.Component{
       searchText = document.getElementById("search").value;
     }
     catch{
-      console.log("bly")
-      searchText = e.target.value;
+      if(e.target.value == "dateSort")
+      {
+        this.state.isSortedByDate = !this.state.isSortedByDate;
+        localStorage.isSortedByDate = this.state.isSortedByDate;
+      }
+      else{
+        searchText = e.target.value;
+      }
     }
     let currentList = [];
     let newList = [];
     if (searchText !== "" || categories.length > 0) {
-      currentList = this.state.recipes;
+      currentList = this.state.recipes.map((x) => x);
 
       newList = currentList.filter(recipe => {
       const lc = recipe.name.toLowerCase();
@@ -44,11 +52,21 @@ export default class Home extends React.Component{
         const category = recipe.category.toLowerCase();
         return lc.includes(filter) && categories.some(x => x == category)
       }
+
       return lc.includes(filter);
       });
     } else {
-      newList = this.state.recipes;
-    }  
+      newList = this.state.recipes.map((x) => x);
+    }
+
+    if(this.state.isSortedByDate == true)
+    {
+      newList.sort(function(a,b){
+        return new Date(b.createDate) - new Date(a.createDate);
+      });
+    }
+    console.log(this.state.recipes);
+
     let filtered = newList.map((recipe) => {
       return <Recipe recipe = {recipe}/>
     })
@@ -58,11 +76,28 @@ export default class Home extends React.Component{
   }
 
   componentDidMount() {
-    let url = "http://localhost:3001/recipes"
+    if(localStorage.isSortedByDate == undefined)
+    {
+      localStorage.isSortedByDate = false;
+    }
+    let url = "http://localhost:3001/recipes";
     fetch(url)
       .then(resp => resp.json())
       .then(data => {
-        let recipes = data.map((recipe, index) => {
+        let sortedRecipes = data.map((x) => x);
+        if(localStorage.isSortedByDate == "true")
+        {
+          this.state.isSortedByDate = true;
+          sortedRecipes.sort(function(a,b){
+            return new Date(b.createDate) - new Date(a.createDate);
+          });
+        }
+        else
+        {
+          this.state.isSortedByDate = false;
+        }
+        console.log(this.state.isSortedByDate)
+        let recipes = sortedRecipes.map((recipe, index) => {
           return <Recipe recipe = {recipe}/>
         })
         let categoriesNames = data.map((recipe, index) => {
@@ -70,7 +105,7 @@ export default class Home extends React.Component{
         })
         categoriesNames = [...new Set(categoriesNames.map(x => x))];
         let categories = categoriesNames.map((name, index) => {
-          var cat = {category: name, checked: false, onChange: this.handleChange};
+          var cat = {category: name, onChange: this.handleChange};
           return <Category props = {cat}/>
         })
         this.setState({recipes: data});
@@ -90,6 +125,7 @@ export default class Home extends React.Component{
                 onChange={this.handleChange}
                 className="search"
               />
+              <DateSort props = {{onChange: this.handleChange, checked: this.state.isSortedByDate}} />
               <Link to={`/add`}>
                 <button className="home-add-button"></button>
               </Link>
