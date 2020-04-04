@@ -12,9 +12,9 @@
     padding: 10px;
     background-image: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701575077.jpg);
     background-size: cover;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
-    height: fit-content;
+    height: 100%;
 }
 
 .search {
